@@ -9,4 +9,12 @@ So today i did:-
 1. Take the User name and store it in a list and count that list
 2. and after that take the user input to access the list.
 
-Day:02---()
+Day:02---(31/1)
+Today i almost completed 99 percent work.
+their is only one issue i.e when the user enter number outlist the list created instead of giving error it always crashes
+Other than that everyting works fine
+1.Take the amount spend by indivisual person and store it in a list
+2.and after that calculate their sum
+3.and display the total amount spend and per person money
+
+DAY:-03---()

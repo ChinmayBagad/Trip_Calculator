@@ -5,23 +5,54 @@ while True:
     if name == "q":
         break
     name_list.append(name)
+    
 
 x=len(name_list)
+money_spend = []
 
-n=print(name_list)
-for i in range(x):
+print(name_list)
+for i in range (x):
+    sel=int(input("Enter the Number of the person from the List:- "))
+    if sel >= 0 or sel <x:
+         z=name_list[sel]
+         spend = []
+    else:
+        print("Plaese Enter a Valide Number from the list")  
+
     while True:
-        z=int(input("Enter the Person Number you want to Select:-"))
-        print(name_list[z])
+            exp=input("Enter the Amount spend by "+ z + "(or 'q' to exit):-" )
+            if exp == 'q':
+               break
+
+            exp=int(exp)
+            spend.append(exp)
+            total=sum(spend)
+
+    
+
+
+    money_spend.append(total)
+    ultra=sum(money_spend)
+    
+    # Distribution Part
+per_person=ultra/x
+print("Total Money Spend = ",ultra)
+print("Per Person Cost = ",per_person) 
+        
+
+        
 
 
 
 
 
 
-money=float(input("Enter the total amount of money spend:-"))
-if money<0:
-    print("Please Enter Valide Amount")
-else:
-    total=money/x
-    print("Per person cost=",total)
+        
+    
+        
+    
+   
+
+   
+
+       
