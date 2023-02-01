@@ -24,7 +24,7 @@ for i in range (x):
             if exp == 'q':
                break
 
-            exp=int(exp)
+            exp=float(exp)
             spend.append(exp)
             total=sum(spend)
 
