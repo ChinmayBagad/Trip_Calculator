@@ -20,9 +20,10 @@ for i in range (x):
                 spend = []
                 break
             else:
-                print("ERROR CODE ( 0 ):- Enter a Valide Number from the list.")
-        except (ValueError):
-            print("ERROR CODE ( 0 ):- Enter a Valide Number from the list.")
+              raise ValueError
+        except ValueError:
+            print("ERROR (Please Refer the list.) ")
+
     
     while True:
         exp = input("Enter the Amount spend by "+ name + " (or 'q' to exit):- " )
